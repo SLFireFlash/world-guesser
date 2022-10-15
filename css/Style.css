@@ -1,0 +1,30 @@
+.wrapper{
+    background-color: cornflowerblue;
+    max-width: 400px;
+
+}
+
+
+.navbar{
+    margin-bottom: 25px;
+}
+.top-bar{
+    margin-bottom: 25px;
+}
+
+
+.box{
+    display:inline-grid;
+    width:60px;
+    height:60px;
+    border: solid black 1px;
+    
+}
+.txtinput{
+    width: 230px;
+    margin-left: 25px;
+}
+.menu-buttons{
+    margin-top: 50px;
+    margin-left: 100px;
+}
