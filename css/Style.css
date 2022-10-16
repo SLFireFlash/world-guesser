@@ -16,8 +16,11 @@
 .box{
     display:inline-grid;
     width:60px;
-    height:60px;
+    height:65px;
     border: solid black 1px;
+    font-size: 40px;
+    text-align: center;
+    font-family:'Trebuchet MS';
     
 }
 .txtinput{
