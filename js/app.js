@@ -1,7 +1,15 @@
 const words =["HELLO","PHONE","WATCH"];
 const startGame =document.getElementById("StartGame");
-var score = document.getElementById("score-display");
+const score = document.getElementById("score-display");
+const btnCheck =document.getElementById("btnCheck");
+const progressBar =document.getElementById("progress-bar");
+
+
 var row_1 =[document.getElementById("box-value-1-1"),document.getElementById("box-value-1-2"),document.getElementById("box-value-1-3"),document.getElementById("box-value-1-4"),document.getElementById("box-value-1-5")];
+var row_2 =[document.getElementById("box-value-2-1"),document.getElementById("box-value-2-2"),document.getElementById("box-value-2-3"),document.getElementById("box-value-2-4"),document.getElementById("box-value-2-5")];
+var row_3 =[document.getElementById("box-value-3-1"),document.getElementById("box-value-3-2"),document.getElementById("box-value-3-3"),document.getElementById("box-value-2-4"),document.getElementById("box-value-3-5")];
+var row_4 =[document.getElementById("box-value-4-1"),document.getElementById("box-value-4-2"),document.getElementById("box-value-4-3"),document.getElementById("box-value-4-4"),document.getElementById("box-value-4-5")];
+var row_5 =[document.getElementById("box-value-5-1"),document.getElementById("box-value-5-2"),document.getElementById("box-value-5-3"),document.getElementById("box-value-5-4"),document.getElementById("box-value-5-5")];
 
 
 function randWordGen(){
@@ -10,7 +18,7 @@ function randWordGen(){
 }
 
 function setWord(){
-    var gameWord = randWordGen();
+    gameWord = randWordGen();
     var hidePos = Math.floor(Math.random()*3)
     console.log("hide pos: " + hidePos)
     for(let a=hidePos;a <3;a++)
@@ -33,8 +41,33 @@ function setWord(){
     row_1[4].innerHTML ="?";
     row_1[4].style.backgroundColor ="red";
 
-
-    //startGame.setAttribute("disabled","");
+    startGame.setAttribute("disabled","");
+    btnCheck.removeAttribute("disabled")
 }
 
+
+function wordCheck(){
+    var userAnswer = document.getElementById("txt-Input").value;
+    userAnswer = userAnswer.toUpperCase();
+    console.log("Game Word: " +gameWord);
+    for(var c=0;c<5;c++){
+        if(userAnswer.charAt(c) == gameWord.charAt(c)){
+            row_2[c].style.backgroundColor = "green"
+            row_1[c].style.color = "white"
+            row_2[c].innerHTML=userAnswer.charAt(c);
+
+        }
+        else
+        {
+            row_2[c].style.backgroundColor = "red" ;
+            row_1[c].style.color = "white"
+            row_2[c].innerHTML=userAnswer.charAt(c); 
+
+        }
+
+
+    }
+}
+
+  
 

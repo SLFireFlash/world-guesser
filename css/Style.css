@@ -3,10 +3,10 @@
     max-width: 400px;
 
 }
-
-
-.navbar{
-    margin-bottom: 25px;
+.top-bar{
+    text-align: center;
+    font-family: cursive;
+    color: white;
 }
 .top-bar{
     margin-bottom: 25px;

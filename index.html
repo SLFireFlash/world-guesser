@@ -10,13 +10,8 @@
     <body>
         <div class="container-fluid wrapper">
 
-
-            <nav class="navbar navbar-light bg-primary">
-                <div class="container-fluid ">
-                  <h2 id="score-display">YOUR SCORE 0 </h2>
-              </nav>
-
-
+            <div class="top-bar">
+                <h2>World Guesser</h2>
             <div class="container game-body">
                 
                 <div class="container boxRow">
@@ -29,38 +24,38 @@
 
                 </div>
                 <div class="container boxRow">
-                    <div class="box" id="box-2-1"></div>
-                    <div class="box" id="box-2-2"></div>
-                    <div class="box" id="box-2-3"></div>
-                    <div class="box" id="box-2-4"></div>
-                    <div class="box" id="box-2-4"></div>
+                    <div class="box" id="box-2-1"><p id="box-value-2-1"></p></div>
+                    <div class="box" id="box-2-2"><p id="box-value-2-2"></p></div>
+                    <div class="box" id="box-2-3"><p id="box-value-2-3"></p></div>
+                    <div class="box" id="box-2-4"><p id="box-value-2-4"></p></div>
+                    <div class="box" id="box-2-4"><p id="box-value-2-5"></p></div>
                     
     
                 </div>
                 <div class="container boxRow">
-                    <div class="box" id="box-3-1"></div>
-                    <div class="box" id="box-3-2"></div>
-                    <div class="box" id="box-3-3"></div>
-                    <div class="box" id="box-3-4"></div>
-                    <div class="box" id="box-3-5"></div>
+                    <div class="box" id="box-3-1"><p id="id="box-value-3-1"></p></div>
+                    <div class="box" id="box-3-2"><p id="id="box-value-3-2"></p></div>
+                    <div class="box" id="box-3-3"><p id="id="box-value-3-3"></p></div>
+                    <div class="box" id="box-3-4"><p id="id="box-value-3-4"></p></div>
+                    <div class="box" id="box-3-5"><p id="id="box-value-3-5"></p></div>
                     
     
                 </div>
                 <div class="container boxRow">
-                    <div class="box" id="box-4-1"></div>
-                    <div class="box" id="box-4-2"></div>
-                    <div class="box" id="box-4-3"></div>
-                    <div class="box" id="box-4-4"></div>
-                    <div class="box" id="box-4-5"></div>
+                    <div class="box" id="box-4-1"><p id="id="box-value-4-1"></p></div>
+                    <div class="box" id="box-4-2"><p id="id="box-value-4-2"></p></div>
+                    <div class="box" id="box-4-3"><p id="id="box-value-4-3"></p></div>
+                    <div class="box" id="box-4-4"><p id="id="box-value-4-4"></p></div>
+                    <div class="box" id="box-4-5"><p id="id="box-value-4-5"></p></div>
                     
     
                 </div>
                 <div class="container boxRow">
-                    <div class="box" id="box-5-1"></div>
-                    <div class="box" id="box-5-2"></div>
-                    <div class="box" id="box-5-3"></div>
-                    <div class="box" id="box-5-4"></div>
-                    <div class="box" id="box-5-5"></div>
+                    <div class="box" id="box-5-1"><p id="id="box-5-1"></p></div>
+                    <div class="box" id="box-5-2"><p id="id="box-5-2"></p></div>
+                    <div class="box" id="box-5-3"><p id="id="box-5-3"></p></div>
+                    <div class="box" id="box-5-4"><p id="id="box-5-4"></p></div>
+                    <div class="box" id="box-5-5"><p id="id="box-5-5"></p></div>
                     
     
                 </div>
@@ -68,32 +63,20 @@
             </div>
             <div class="container input-group">
                 <div class="txtinput">
-                    <input type="text" class="form-control"  placeholder="Your-guess" aria-label="Your-guess" aria-describedby="button-addon2">
+                    <input type="text" id="txt-Input" class="form-control"  placeholder="Your-guess" maxlength="5">
+
                 </div>
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Check</button>
+                    <button class="btn btn-outline-secondary" type="button" id="btnCheck" onclick="wordCheck()" disabled>Check</button>
             </div>
 
-            <div class=" menu-buttons">
+            <div class="container menu-buttons">
                 <form class="container-fluid justify-content-start">
                     <button class="btn btn-sm btn-outline-secondary" type="button">Home</button>
                     <button class="btn btn-sm btn-outline-secondary" id="StartGame" onclick="setWord()" type="button">Start Game</button>
+                    <button class="btn btn-sm btn-outline-secondary" id="newGame" onclick="newGame()" type="button">New Game</button>
+                    <button class="btn btn-sm btn-outline-secondary" id="newGame" onclick="exitGame()" type="button">Exit</button>
                   </form>                    
-                </div>
-
             </div>
-
-
-
-            <div class="container-lg footer">
-
-            </div>
-            
-
-<!--class="form-control" class="btn btn-outline-secondary" -->
-
-
-
-
 
 
 
