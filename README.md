@@ -1,2 +1,3 @@
 # world-guesser
-from JS
+dev with Js
+stil on dev phase
